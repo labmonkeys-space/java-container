@@ -27,6 +27,10 @@ workflows:
 
   build:
     jobs:
+      - maven-11-jdk:
+          context: "Publishing"
+      - maven-17-jdk:
+          context: "Publishing"
       - openjdk-11-jdk:
           context: "Publishing"
       - openjdk-11-jre:
@@ -36,6 +40,18 @@ workflows:
       - openjdk-17-jre:
           context: "Publishing"
 jobs:
+  maven-11-jdk:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./maven-11-jdk"
+
+  maven-17-jdk:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./maven-17-jdk"
+
   openjdk-11-jdk:
     executor: build-executor
     steps:
