@@ -6,8 +6,7 @@
 FROM "${BASE_IMAGE}"
 
 RUN apt-get update && \
-    apt-get -y install --no-install-recommends openjdk-17-jdk-headless="${OPENJDK_17_JDK_VERSION}" \
-                                               maven="${MAVEN_VERSION}" && \
+    apt-get -y install --no-install-recommends maven="${MAVEN_VERSION}" && \
     rm -rf /var/lib/apt/lists/*
 
 LABEL org.opencontainers.image.source="${VCS_SOURCE}" \
