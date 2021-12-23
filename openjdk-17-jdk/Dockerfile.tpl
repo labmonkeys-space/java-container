@@ -14,3 +14,4 @@ LABEL org.opencontainers.image.source="${VCS_SOURCE}" \
       org.opencontainers.image.vendor="Labmonkeys Space" \
       org.opencontainers.image.authors="ronny@no42.org" \
       org.opencontainers.image.licenses="MIT"
+      org.opencontainers.image.java.version="${OPENJDK_17_JRE_VERSION}"
