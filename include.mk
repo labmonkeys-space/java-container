@@ -5,7 +5,7 @@
 
 .DEFAULT_GOAL := oci
 
-SHELL                    := /usr/bin/bash
+SHELL                    := /bin/bash
 PROJECT_DIR              := $(shell basename $(abspath $(dir $$PWD)))
 CONTAINER_REGISTRY       ?=
 CONTAINER_REGISTRY_REPO  ?=
