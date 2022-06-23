@@ -7,5 +7,5 @@ DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 export VCS_SOURCE
 export VCS_REVISION
 export DATE
-export BASE_IMAGE="quay.io/labmonkeys/ubuntu:jammy-20220428.b169"
+export BASE_IMAGE="quay.io/labmonkeys/ubuntu:jammy-20220531.b176"
 export OPENJDK_11_JRE_VERSION="11.0.15+10-0ubuntu0.22.04.1"
