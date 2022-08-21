@@ -8,4 +8,4 @@ export VCS_SOURCE
 export VCS_REVISION
 export DATE
 export BASE_IMAGE="quay.io/labmonkeys/ubuntu:jammy-20220801.b187"
-export OPENJDK_11_JRE_VERSION="11.0.16+8-0ubuntu1~22.04"
+export OPENJDK_18_JDK_VERSION="18.0.2+9-2~22.04"

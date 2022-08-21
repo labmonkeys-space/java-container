@@ -4,7 +4,7 @@ version: 2.1
 executors:
   build-executor:
     docker:
-      - image: quay.io/labmonkeys/cimg-base:2022.06-22.04.b45
+      - image: quay.io/labmonkeys/cimg-base:2022.08-22.04.b46
 
 commands:
   make-image:
@@ -40,6 +40,10 @@ workflows:
           context: "Publishing"
       - openjdk-17-jre:
           context: "Publishing"
+      - openjdk-18-jdk:
+          context: "Publishing"
+      - openjdk-18-jre:
+          context: "Publishing"
 jobs:
   openjdk-11-jdk:
     executor: build-executor
@@ -64,3 +68,15 @@ jobs:
     steps:
       - make-image:
           workdir: "./openjdk-17-jre"
+
+  openjdk-18-jdk:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./openjdk-18-jdk"
+
+  openjdk-18-jre:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./openjdk-18-jre"
