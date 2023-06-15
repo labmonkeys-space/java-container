@@ -10,4 +10,4 @@ export VCS_SOURCE
 export VCS_REVISION
 export DATE
 export BASE_IMAGE="${OS_UBUNTU_JAMMY}"
-export OPENJDK_17_JDK_VERSION="17.0.6+10-0ubuntu1~22.04"
+export OPENJDK_17_JDK_VERSION="17.0.7+7~us1-0ubuntu1~22.04.2"
