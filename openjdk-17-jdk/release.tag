@@ -1,1 +1,1 @@
-openjdk:jdk-17.0.7
+openjdk:jdk-17.0.9
