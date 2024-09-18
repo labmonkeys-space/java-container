@@ -1,1 +1,1 @@
-openjdk:jre-11.0.21
+openjdk:jre-11.0.24
